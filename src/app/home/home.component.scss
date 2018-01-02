@@ -1,0 +1,40 @@
+.container{
+  display: grid;
+  grid-template-columns: 50% auto;
+}
+
+.col{
+  padding: .4em 1.3em;
+}
+
+.color-dark{
+  background: #2885c4;
+}
+
+.color-light{
+  background: #57B3F1;
+}
+
+input.txt{
+  border: 0;
+  padding: 1em;
+  width: 80%;
+  margin-bottom: 2em;
+}
+
+input.button{
+  border: 0;
+  display: block;
+  padding: 1em 3em;
+  background: #A5F883;
+  margin-bottom: 1em;
+  cursor: pointer;
+}
+
+.goal-cage{
+  background: #3fa0e1;
+  padding: .5em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
