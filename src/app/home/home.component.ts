@@ -42,8 +42,20 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.data.item.subscribe(res=> this.items = res);
-    this.data.changeItem(this.items);
+    //this.data.item.subscribe(res=> this.items = res);
+    //this.data.changeItem(this.items);
+
+    this
+      .data
+      .item
+      .subscribe((packages) => {
+
+        this.items = packages;
+      });
+
+    //make the http request
+    this.data.loadAllPackages();
+
     this.itemCount = this.items.length;
 
   }

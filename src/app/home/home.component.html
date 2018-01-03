@@ -20,7 +20,7 @@
     </form>
   </div>
   <div class="col">
-    <p class="goal-cage" *ngFor="let item of items; let i = index" (click)="removeItem(i)">{{item}}</p>
+    <p class="goal-cage" *ngFor="let item of items; let i = index" (click)="removeItem(i)">{{item.name}} - {{item.price}}</p>
   </div>
 
 </div>
