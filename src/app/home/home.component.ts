@@ -33,8 +33,10 @@ import {DataService} from '../data.service';
 export class HomeComponent implements OnInit {
 
   itemCount: number = 4;
-  buttonText: string = 'Add an Item';
-  goalText: string = 'Item';
+  buttonText: string = 'Add a City';
+  ciytName: string = '';
+  price: string = '';
+
 
   items = [];
 
@@ -44,21 +46,22 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.data.item.subscribe((packages) => {
       this.items = packages;
+      this.itemCount = this.items.length;
     });
 
     this.data.loadAllPackages();
-    this.itemCount = this.items.length;
   }
 
 
   addItem() {
     const item = {};
-    item['name'] = this.goalText;
-    item['price'] = 3455;
+    item['name'] = this.ciytName;
+    item['price'] = this.price;
 
 
     this.items.push(item);
-    this.goalText = '';
+    this.ciytName = '';
+    this.price = '';
 
     this.data.changeItem(this.items);
     this.itemCount = this.items.length;

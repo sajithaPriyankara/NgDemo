@@ -1,9 +1,9 @@
 <div class="container color-dark">
   <div class="col">
-    <p>Add a list item</p>
+    <p>Manage Items</p>
   </div>
   <div class="col">
-    <p>My item list {{itemCount}}</p>
+    <p *ngIf="itemCount">Item count: {{itemCount}}</p>
   </div>
 
 </div>
@@ -13,14 +13,22 @@
     <p class="sm">Add an item</p>
 
     <form action="">
-      <input type="text" class="txt" name="item" placeholder="My items..." [(ngModel)]="goalText">
+      <input type="text" class="txt" name="item" placeholder="City name" [(ngModel)]="ciytName">
       <br>
-      <span>{{goalText}}</span>
+      <input type="text" class="txt" name="price" placeholder="Price" [(ngModel)]="price">
+      <br><br>
+
+      <span *ngIf="ciytName">Name: {{ciytName}} - Price: {{price}}</span>
+      <br><br>
+
       <input (click)="addItem()" type="submit" class="button" [value]="buttonText">
     </form>
   </div>
+
+
   <div class="col">
-    <p class="goal-cage" *ngFor="let item of items; let i = index" (click)="removeItem(i)">{{item.name}} - {{item.price}}</p>
+    <p class="detail-cage" *ngFor="let item of items; let i = index" (click)="removeItem(i)">{{item.name}} -
+      ${{item.price}}</p>
   </div>
 
 </div>

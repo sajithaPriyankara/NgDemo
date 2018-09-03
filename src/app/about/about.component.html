@@ -1,8 +1,9 @@
-<p>
-  about works!
-  {{routeId}}
-</p>
+<div class="details">
 
-<ul>
-  <li *ngFor="let item of items">{{item.name}}</li>
-</ul>
+  <p>
+    City Id: {{routeId}}
+  </p>
+
+
+  <div class="list-item" *ngFor="let item of items">{{item.name}} - ${{item.price}} <br></div>
+</div>
