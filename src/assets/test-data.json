@@ -1,0 +1,74 @@
+[
+  {
+    "name": "London",
+    "price": "1,200",
+    "duration": "10 Days",
+    "countryCode": "uk"
+  },
+  {
+    "name": "Paris",
+    "price": "2,250",
+    "duration": "14 Days",
+    "countryCode": "france"
+  },
+  {
+    "name": "Miami",
+    "price": "1,100",
+    "duration": "7 Days",
+    "countryCode": "usa"
+  },
+  {
+    "name": "Lyon",
+    "price": "2,150",
+    "duration": "12 Days",
+    "countryCode": "france"
+  },
+  {
+    "name": "Rome",
+    "price": "1,250",
+    "duration": "7 Days",
+    "countryCode": "italy"
+  },
+  {
+    "name": "Los Angeles",
+    "price": "950",
+    "duration": "7 Days",
+    "countryCode": "usa"
+  },
+  {
+    "name": "Milan",
+    "price": "1,450",
+    "duration": "10 Days",
+    "countryCode": "italy"
+  },
+  {
+    "name": "Chicago",
+    "price": "950",
+    "duration": "12 Days",
+    "countryCode": "usa"
+  },
+  {
+    "name": "Venice",
+    "price": "1,500",
+    "duration": "10 Days",
+    "countryCode": "italy"
+  },
+  {
+    "name": "Florence",
+    "price": "1,500",
+    "duration": "10 Days",
+    "countryCode": "italy"
+  },
+  {
+    "name": "Cambridge",
+    "price": "1,150",
+    "duration": "10 Days",
+    "countryCode": "uk"
+  },
+  {
+    "name": "Marseille",
+    "price": "1,750",
+    "duration": "10 Days",
+    "countryCode": "france"
+  }
+]
