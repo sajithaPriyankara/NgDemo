@@ -16,6 +16,7 @@ export class DataService {
   loadAllPackages() {
     this.http
       .get('https://api.myjson.com/bins/1g87r')
+      // .get('../assets/test-data.json')
       .subscribe((data: any) => {
           this.items.next(data);
         },

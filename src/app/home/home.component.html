@@ -13,12 +13,12 @@
     <p class="sm">Add an item</p>
 
     <form action="">
-      <input type="text" class="txt" name="item" placeholder="City name" [(ngModel)]="ciytName">
+      <input type="text" class="txt" name="item" placeholder="City name" [(ngModel)]="cityName">
       <br>
       <input type="text" class="txt" name="price" placeholder="Price" [(ngModel)]="price">
       <br><br>
 
-      <span *ngIf="ciytName">Name: {{ciytName}} - Price: {{price}}</span>
+      <span *ngIf="cityName">Name: {{cityName}} - Price: {{price}}</span>
       <br><br>
 
       <input (click)="addItem()" type="submit" class="button" [value]="buttonText">

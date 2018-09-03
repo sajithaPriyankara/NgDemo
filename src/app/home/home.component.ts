@@ -34,7 +34,7 @@ export class HomeComponent implements OnInit {
 
   itemCount: number = 4;
   buttonText: string = 'Add a City';
-  ciytName: string = '';
+  cityName: string = '';
   price: string = '';
 
 
@@ -55,12 +55,12 @@ export class HomeComponent implements OnInit {
 
   addItem() {
     const item = {};
-    item['name'] = this.ciytName;
+    item['name'] = this.cityName;
     item['price'] = this.price;
 
 
     this.items.push(item);
-    this.ciytName = '';
+    this.cityName = '';
     this.price = '';
 
     this.data.changeItem(this.items);
